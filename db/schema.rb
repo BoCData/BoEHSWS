@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150317230311) do
+ActiveRecord::Schema.define(version: 20150318035812) do
 
   create_table "data_variable_values", force: :cascade do |t|
     t.integer  "data_variable_id"
@@ -26,6 +26,14 @@ ActiveRecord::Schema.define(version: 20150317230311) do
     t.string   "name"
     t.text     "description"
     t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_data", force: :cascade do |t|
+    t.integer  "data_variable_value_id"
+    t.integer  "user_id"
+    t.string   "value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

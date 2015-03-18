@@ -5,31 +5,43 @@ CSV::Converters[:blank_to_nil] = lambda do |field|
   field && field.empty? ? nil : field
 end
 
+var_name = ''
+var_desc = ''
+var_notes = ''
+var_vals = ''
+
 csv = CSV.new(body, :headers => true, :header_converters => :symbol, :converters => [:all, :blank_to_nil])
 csv.each do |row|
   
-  #Get the new variable number
-  var_num = row[:variable_number]
+  #Get the new stuff from the row
+  new_var_num = row[:variable_number].nil? ? nil : row[:variable_number]
+  new_var_name = row[:variable_name].nil? ? '' : row[:variable_name]
+  new_var_desc = row[:description].nil? ? '' : row[:description]
+  new_var_notes = row[:notes].nil? ? '' : row[:notes]
+  new_var_vals = row[:values].nil? ? '' : row[:values]
   
-  #If new number, save stuff and start a new record
-  if !var_num.nil?
-    if var_num > 1
-      # index = DataVariable.create!(:name => var_name, :desc => var_desc, :notes => var_notes)
-      
-      puts var_num
-      # var_vals.each do |key,val|
-      #   DataVariableValue.create!(:data_variable_id => index, :value => val)
-      # end    
+  #If it's a new number and not empty
+  if !new_var_num.nil?
+    
+    #If it's greater than 1
+    if new_var_num > 1
+      dv = DataVariable.new(:name => var_name, :description => var_desc, :notes => var_notes)
+      var_vals.each do |key,val|
+        puts dv
+        puts val
+        # DataVariableValue.create!(:data_variable => dv, :value => val)
+      end    
     end
-    var_name = row[:variable_name]
-    var_desc = row[:description]
-    var_notes = row[:notes]
+    var_name = new_var_name
+    var_desc = new_var_desc
+    var_notes = new_var_notes
     var_vals = Array.new
-    var_vals << row[:values]
+    var_vals << new_var_vals
   else
-    var_name = var_name.nil? ? '' : var_name << row[:variable_name]
-    var_desc = var_desc.nil? ? '' : var_desc << row[:description]
-    var_notes = var_notes.nil? ? '' : var_notes << row[:notes]
-    var_vals = var_vals.nil? ? Array.new : var_vals << row[:values]
+    var_name << new_var_name
+    var_desc << new_var_desc
+    var_notes << new_var_notes
+    var_vals << new_var_vals
   end
+end
 
