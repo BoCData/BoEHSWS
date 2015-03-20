@@ -14,7 +14,7 @@ namespace :import do
     end
     
     #Set the columns from the file that we want to read into the tables
-    columns = ["soc","age_grp","region","sex","tenure","mastat","educ","dfihhyr","saveamount"]
+    columns = ["soc","age_grp","region","sex","tenure","mastat","educ","dfihhyr","saveamount", "saveamount_m", "dfihhyr_m"]
    
     #Initiate the variables 
     var_name = ''
@@ -83,7 +83,7 @@ namespace :import do
     years = args[:years].split ' '
     
     #Set the columns from the file that we want to read into the tables
-    columns = ["soc","age_grp","region","sex","tenure","mastat","educ","dfihhyr","saveamount"]
+    columns = ["soc","age_grp","region","sex","tenure","mastat","educ","dfihhyr","saveamount", "saveamount_m", "dfihhyr_m"]
 
     #Manually created the data for this because it was the easiest way to do it          
     saveamount = {"£1-£24" => {:value_number_low => 1, :value_number_high => 24, :value_number_mid => 12.5, :error => 11.5, :error_percent => 92, :unit => '£'},
@@ -178,7 +178,20 @@ namespace :import do
                 #Merge them into default params if so
                 params.merge!(numbers)
                 user_data << params
-              end                        
+              end   
+            elsif index == "dfihhyr_m" || index == "saveamount_m"
+              numbers = {
+                :value_number_low => value, 
+                :value_number_high => value, 
+                :value_number_mid => value, 
+                :error => 0, 
+                :error_percent => 0, 
+                :unit => '£'
+              }
+    
+              #Merge them into default params if so
+              params.merge!(numbers)
+              user_data << params                     
             elsif !dv.nil? && !user_id.nil?
               #Create a record for the user data based on the merged params above
               user_data << params
@@ -214,8 +227,6 @@ namespace :import do
   desc "Import Data and Generate Curves"
   task :all, [:years] => [:environment] do |t, args|
     years = args[:years]
-    puts "Importing Data Variables..."
-    Rake::Task["import:data_variables"].invoke
     puts "Importing Data Values..."
     Rake::Task["import:data_values"].invoke(args[:years])
     puts "Generating Curves..."
@@ -226,8 +237,9 @@ namespace :import do
     #Calculate the x-axis interval size
     x_interval = range / group_size
     
+    
     #Get the user data ordered lowest to highest for one variable in one year
-    user_data = UserDatum.joins(:data_variable).where(data_variables: {name: variable_name}, year: year).order(value_number_mid: :asc) 
+    user_data = UserDatum.joins(:data_variable).where("data_variables.name LIKE ?%", variable_name).where(year: year).order(value_number_mid: :asc) 
     
     #Calculate the number of total records
     record_count = user_data.count
