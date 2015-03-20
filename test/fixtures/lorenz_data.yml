@@ -1,11 +1,401 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-# This model initially had no columns defined.  If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+---
+lorenz_data_001:
+  id: 1
+  x_value: !ruby/object:BigDecimal 18:0.5E-1
+  y_value: !ruby/object:BigDecimal 18:0.2733E-1
+  st_dev: !ruby/object:BigDecimal 18:0.443E-1
+  data_variable_id: 7
+  group_size: 23
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_002:
+  id: 2
+  x_value: !ruby/object:BigDecimal 18:0.1E0
+  y_value: !ruby/object:BigDecimal 18:0.5466E-1
+  st_dev: !ruby/object:BigDecimal 18:0.6266E-1
+  data_variable_id: 7
+  group_size: 23
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_003:
+  id: 3
+  x_value: !ruby/object:BigDecimal 18:0.15E0
+  y_value: !ruby/object:BigDecimal 18:0.808E-1
+  st_dev: !ruby/object:BigDecimal 18:0.7723E-1
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_004:
+  id: 4
+  x_value: !ruby/object:BigDecimal 18:0.2E0
+  y_value: !ruby/object:BigDecimal 18:0.10694E0
+  st_dev: !ruby/object:BigDecimal 18:0.8947E-1
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_005:
+  id: 5
+  x_value: !ruby/object:BigDecimal 18:0.25E0
+  y_value: !ruby/object:BigDecimal 18:0.13403E0
+  st_dev: !ruby/object:BigDecimal 18:0.9961E-1
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_006:
+  id: 6
+  x_value: !ruby/object:BigDecimal 18:0.3E0
+  y_value: !ruby/object:BigDecimal 18:0.17067E0
+  st_dev: !ruby/object:BigDecimal 18:0.10534E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_007:
+  id: 7
+  x_value: !ruby/object:BigDecimal 18:0.35E0
+  y_value: !ruby/object:BigDecimal 18:0.20731E0
+  st_dev: !ruby/object:BigDecimal 18:0.11078E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_008:
+  id: 8
+  x_value: !ruby/object:BigDecimal 18:0.4E0
+  y_value: !ruby/object:BigDecimal 18:0.24395E0
+  st_dev: !ruby/object:BigDecimal 18:0.11596E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_009:
+  id: 9
+  x_value: !ruby/object:BigDecimal 18:0.45E0
+  y_value: !ruby/object:BigDecimal 18:0.28059E0
+  st_dev: !ruby/object:BigDecimal 18:0.12093E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_010:
+  id: 10
+  x_value: !ruby/object:BigDecimal 18:0.5E0
+  y_value: !ruby/object:BigDecimal 18:0.32152E0
+  st_dev: !ruby/object:BigDecimal 18:0.12498E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_011:
+  id: 11
+  x_value: !ruby/object:BigDecimal 18:0.55E0
+  y_value: !ruby/object:BigDecimal 18:0.36866E0
+  st_dev: !ruby/object:BigDecimal 18:0.12822E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_012:
+  id: 12
+  x_value: !ruby/object:BigDecimal 18:0.6E0
+  y_value: !ruby/object:BigDecimal 18:0.4158E0
+  st_dev: !ruby/object:BigDecimal 18:0.13138E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_013:
+  id: 13
+  x_value: !ruby/object:BigDecimal 18:0.65E0
+  y_value: !ruby/object:BigDecimal 18:0.46294E0
+  st_dev: !ruby/object:BigDecimal 18:0.13447E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_014:
+  id: 14
+  x_value: !ruby/object:BigDecimal 18:0.7E0
+  y_value: !ruby/object:BigDecimal 18:0.51485E0
+  st_dev: !ruby/object:BigDecimal 18:0.13714E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_015:
+  id: 15
+  x_value: !ruby/object:BigDecimal 18:0.75E0
+  y_value: !ruby/object:BigDecimal 18:0.57248E0
+  st_dev: !ruby/object:BigDecimal 18:0.13946E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_016:
+  id: 16
+  x_value: !ruby/object:BigDecimal 18:0.8E0
+  y_value: !ruby/object:BigDecimal 18:0.63393E0
+  st_dev: !ruby/object:BigDecimal 18:0.14158E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_017:
+  id: 17
+  x_value: !ruby/object:BigDecimal 18:0.85E0
+  y_value: !ruby/object:BigDecimal 18:0.714E0
+  st_dev: !ruby/object:BigDecimal 18:0.14322E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_018:
+  id: 18
+  x_value: !ruby/object:BigDecimal 18:0.9E0
+  y_value: !ruby/object:BigDecimal 18:0.80313E0
+  st_dev: !ruby/object:BigDecimal 18:0.14472E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_019:
+  id: 19
+  x_value: !ruby/object:BigDecimal 18:0.95E0
+  y_value: !ruby/object:BigDecimal 18:0.90037E0
+  st_dev: !ruby/object:BigDecimal 18:0.14612E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_020:
+  id: 20
+  x_value: !ruby/object:BigDecimal 18:0.1E1
+  y_value: !ruby/object:BigDecimal 18:0.1E1
+  st_dev: !ruby/object:BigDecimal 18:0.14748E0
+  data_variable_id: 7
+  group_size: 22
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_021:
+  id: 21
+  x_value: !ruby/object:BigDecimal 18:0.5E-1
+  y_value: !ruby/object:BigDecimal 18:0.2461E-1
+  st_dev: !ruby/object:BigDecimal 18:0.9443E-1
+  data_variable_id: 8
+  group_size: 15
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_022:
+  id: 22
+  x_value: !ruby/object:BigDecimal 18:0.1E0
+  y_value: !ruby/object:BigDecimal 18:0.4921E-1
+  st_dev: !ruby/object:BigDecimal 18:0.13354E0
+  data_variable_id: 8
+  group_size: 15
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_023:
+  id: 23
+  x_value: !ruby/object:BigDecimal 18:0.15E0
+  y_value: !ruby/object:BigDecimal 18:0.7382E-1
+  st_dev: !ruby/object:BigDecimal 18:0.16356E0
+  data_variable_id: 8
+  group_size: 15
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_024:
+  id: 24
+  x_value: !ruby/object:BigDecimal 18:0.2E0
+  y_value: !ruby/object:BigDecimal 18:0.9842E-1
+  st_dev: !ruby/object:BigDecimal 18:0.18886E0
+  data_variable_id: 8
+  group_size: 15
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_025:
+  id: 25
+  x_value: !ruby/object:BigDecimal 18:0.25E0
+  y_value: !ruby/object:BigDecimal 18:0.12303E0
+  st_dev: !ruby/object:BigDecimal 18:0.21115E0
+  data_variable_id: 8
+  group_size: 15
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_026:
+  id: 26
+  x_value: !ruby/object:BigDecimal 18:0.3E0
+  y_value: !ruby/object:BigDecimal 18:0.15091E0
+  st_dev: !ruby/object:BigDecimal 18:0.23266E0
+  data_variable_id: 8
+  group_size: 15
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_027:
+  id: 27
+  x_value: !ruby/object:BigDecimal 18:0.35E0
+  y_value: !ruby/object:BigDecimal 18:0.20012E0
+  st_dev: !ruby/object:BigDecimal 18:0.2511E0
+  data_variable_id: 8
+  group_size: 15
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_028:
+  id: 28
+  x_value: !ruby/object:BigDecimal 18:0.4E0
+  y_value: !ruby/object:BigDecimal 18:0.24934E0
+  st_dev: !ruby/object:BigDecimal 18:0.26827E0
+  data_variable_id: 8
+  group_size: 15
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_029:
+  id: 29
+  x_value: !ruby/object:BigDecimal 18:0.45E0
+  y_value: !ruby/object:BigDecimal 18:0.29527E0
+  st_dev: !ruby/object:BigDecimal 18:0.28528E0
+  data_variable_id: 8
+  group_size: 14
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_030:
+  id: 30
+  x_value: !ruby/object:BigDecimal 18:0.5E0
+  y_value: !ruby/object:BigDecimal 18:0.3412E0
+  st_dev: !ruby/object:BigDecimal 18:0.30133E0
+  data_variable_id: 8
+  group_size: 14
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_031:
+  id: 31
+  x_value: !ruby/object:BigDecimal 18:0.55E0
+  y_value: !ruby/object:BigDecimal 18:0.38713E0
+  st_dev: !ruby/object:BigDecimal 18:0.31658E0
+  data_variable_id: 8
+  group_size: 14
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_032:
+  id: 32
+  x_value: !ruby/object:BigDecimal 18:0.6E0
+  y_value: !ruby/object:BigDecimal 18:0.43306E0
+  st_dev: !ruby/object:BigDecimal 18:0.33112E0
+  data_variable_id: 8
+  group_size: 14
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_033:
+  id: 33
+  x_value: !ruby/object:BigDecimal 18:0.65E0
+  y_value: !ruby/object:BigDecimal 18:0.47899E0
+  st_dev: !ruby/object:BigDecimal 18:0.34504E0
+  data_variable_id: 8
+  group_size: 14
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_034:
+  id: 34
+  x_value: !ruby/object:BigDecimal 18:0.7E0
+  y_value: !ruby/object:BigDecimal 18:0.53822E0
+  st_dev: !ruby/object:BigDecimal 18:0.35423E0
+  data_variable_id: 8
+  group_size: 14
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_035:
+  id: 35
+  x_value: !ruby/object:BigDecimal 18:0.75E0
+  y_value: !ruby/object:BigDecimal 18:0.61518E0
+  st_dev: !ruby/object:BigDecimal 18:0.36064E0
+  data_variable_id: 8
+  group_size: 14
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_036:
+  id: 36
+  x_value: !ruby/object:BigDecimal 18:0.8E0
+  y_value: !ruby/object:BigDecimal 18:0.69214E0
+  st_dev: !ruby/object:BigDecimal 18:0.36693E0
+  data_variable_id: 8
+  group_size: 14
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_037:
+  id: 37
+  x_value: !ruby/object:BigDecimal 18:0.85E0
+  y_value: !ruby/object:BigDecimal 18:0.76911E0
+  st_dev: !ruby/object:BigDecimal 18:0.37312E0
+  data_variable_id: 8
+  group_size: 14
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_038:
+  id: 38
+  x_value: !ruby/object:BigDecimal 18:0.9E0
+  y_value: !ruby/object:BigDecimal 18:0.84607E0
+  st_dev: !ruby/object:BigDecimal 18:0.37921E0
+  data_variable_id: 8
+  group_size: 14
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_039:
+  id: 39
+  x_value: !ruby/object:BigDecimal 18:0.95E0
+  y_value: !ruby/object:BigDecimal 18:0.92304E0
+  st_dev: !ruby/object:BigDecimal 18:0.3852E0
+  data_variable_id: 8
+  group_size: 14
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z
+lorenz_data_040:
+  id: 40
+  x_value: !ruby/object:BigDecimal 18:0.1E1
+  y_value: !ruby/object:BigDecimal 18:0.1E1
+  st_dev: !ruby/object:BigDecimal 18:0.3911E0
+  data_variable_id: 8
+  group_size: 14
+  year: 2011
+  created_at: 2015-03-20 16:30:56.000000000 Z
+  updated_at: 2015-03-20 16:30:56.000000000 Z

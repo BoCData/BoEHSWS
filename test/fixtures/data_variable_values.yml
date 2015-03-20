@@ -1,0 +1,439 @@
+---
+data_variable_values_001:
+  id: 1
+  data_variable_id: 1
+  value: male
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_002:
+  id: 2
+  data_variable_id: 1
+  value: female
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_003:
+  id: 3
+  data_variable_id: 2
+  value: Outright owner
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_004:
+  id: 4
+  data_variable_id: 2
+  value: Mortgagor
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_005:
+  id: 5
+  data_variable_id: 2
+  value: Local authority rented
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_006:
+  id: 6
+  data_variable_id: 2
+  value: Housing association rented
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_007:
+  id: 7
+  data_variable_id: 2
+  value: Private rented
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_008:
+  id: 8
+  data_variable_id: 2
+  value: Other
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_009:
+  id: 9
+  data_variable_id: 3
+  value: A
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_010:
+  id: 10
+  data_variable_id: 3
+  value: B
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_011:
+  id: 11
+  data_variable_id: 3
+  value: C1
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_012:
+  id: 12
+  data_variable_id: 3
+  value: C2
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_013:
+  id: 13
+  data_variable_id: 3
+  value: D
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_014:
+  id: 14
+  data_variable_id: 3
+  value: E
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_015:
+  id: 15
+  data_variable_id: 3
+  value: F
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_016:
+  id: 16
+  data_variable_id: 4
+  value: 18-24
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_017:
+  id: 17
+  data_variable_id: 4
+  value: 25-34
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_018:
+  id: 18
+  data_variable_id: 4
+  value: 35-44
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_019:
+  id: 19
+  data_variable_id: 4
+  value: 45-54
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_020:
+  id: 20
+  data_variable_id: 4
+  value: 55-64
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_021:
+  id: 21
+  data_variable_id: 4
+  value: 65+
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_022:
+  id: 22
+  data_variable_id: 5
+  value: London (Inner & Outer)
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_023:
+  id: 23
+  data_variable_id: 5
+  value: Rest of South East
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_024:
+  id: 24
+  data_variable_id: 5
+  value: South West
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_025:
+  id: 25
+  data_variable_id: 5
+  value: East Anglia
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_026:
+  id: 26
+  data_variable_id: 5
+  value: East Midlands
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_027:
+  id: 27
+  data_variable_id: 5
+  value: West Midlands
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_028:
+  id: 28
+  data_variable_id: 5
+  value: North West
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_029:
+  id: 29
+  data_variable_id: 5
+  value: Yorkshire
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_030:
+  id: 30
+  data_variable_id: 5
+  value: North West
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_031:
+  id: 31
+  data_variable_id: 5
+  value: Wales
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_032:
+  id: 32
+  data_variable_id: 5
+  value: Scotland
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_033:
+  id: 33
+  data_variable_id: 6
+  value: Married or living as couple
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_034:
+  id: 34
+  data_variable_id: 6
+  value: Widowed/divorced/seperated
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_035:
+  id: 35
+  data_variable_id: 6
+  value: Never married
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_036:
+  id: 36
+  data_variable_id: 7
+  value: "<£200"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_037:
+  id: 37
+  data_variable_id: 7
+  value: "£200-£299"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_038:
+  id: 38
+  data_variable_id: 7
+  value: "£300-£399"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_039:
+  id: 39
+  data_variable_id: 7
+  value: "£400-£499"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_040:
+  id: 40
+  data_variable_id: 7
+  value: "£500-£599"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_041:
+  id: 41
+  data_variable_id: 7
+  value: "£600-£699"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_042:
+  id: 42
+  data_variable_id: 7
+  value: "£700-£799"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_043:
+  id: 43
+  data_variable_id: 7
+  value: "£800-£899"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_044:
+  id: 44
+  data_variable_id: 7
+  value: "£900-£999"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_045:
+  id: 45
+  data_variable_id: 7
+  value: "£1000-£1199"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_046:
+  id: 46
+  data_variable_id: 7
+  value: "£1200-£1399"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_047:
+  id: 47
+  data_variable_id: 7
+  value: "£1400-£1599"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_048:
+  id: 48
+  data_variable_id: 7
+  value: "£1600-£1799"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_049:
+  id: 49
+  data_variable_id: 7
+  value: "£1800-£1999"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_050:
+  id: 50
+  data_variable_id: 7
+  value: "£2000-£2999"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_051:
+  id: 51
+  data_variable_id: 7
+  value: "£3000-£3999"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_052:
+  id: 52
+  data_variable_id: 7
+  value: "£4000-£4999"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_053:
+  id: 53
+  data_variable_id: 7
+  value: ">=£5000"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_054:
+  id: 54
+  data_variable_id: 8
+  value: None
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_055:
+  id: 55
+  data_variable_id: 8
+  value: "£1-£24"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_056:
+  id: 56
+  data_variable_id: 8
+  value: "£25-£49"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_057:
+  id: 57
+  data_variable_id: 8
+  value: "£50-£99"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_058:
+  id: 58
+  data_variable_id: 8
+  value: "£100-£149"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_059:
+  id: 59
+  data_variable_id: 8
+  value: "£150-£199"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_060:
+  id: 60
+  data_variable_id: 8
+  value: "£200 - £249"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_061:
+  id: 61
+  data_variable_id: 8
+  value: "£250 - £299"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_062:
+  id: 62
+  data_variable_id: 8
+  value: "£300 - £349"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_063:
+  id: 63
+  data_variable_id: 8
+  value: "£350 - £399"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_064:
+  id: 64
+  data_variable_id: 8
+  value: "£400 - £449"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_065:
+  id: 65
+  data_variable_id: 8
+  value: "£450 - £499"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_066:
+  id: 66
+  data_variable_id: 8
+  value: "£500 - £599"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_067:
+  id: 67
+  data_variable_id: 8
+  value: "£600 - £699"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_068:
+  id: 68
+  data_variable_id: 8
+  value: "£700 - £799"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_069:
+  id: 69
+  data_variable_id: 8
+  value: "£800 - £899"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_070:
+  id: 70
+  data_variable_id: 8
+  value: "£900 - £999"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_071:
+  id: 71
+  data_variable_id: 8
+  value: "£1,000 - £1,499"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_072:
+  id: 72
+  data_variable_id: 8
+  value: "£1,500 - £1,999"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variable_values_073:
+  id: 73
+  data_variable_id: 8
+  value: "£2,000 or more"
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
