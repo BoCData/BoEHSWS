@@ -14,42 +14,42 @@
 ActiveRecord::Schema.define(version: 20150319143528) do
 
   create_table "data_variable_values", force: :cascade do |t|
-    t.integer  "data_variable_id"
-    t.string   "value"
+    t.integer  "data_variable_id", limit: 4
+    t.string   "value",            limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "data_variables", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.text     "notes"
+    t.string   "name",        limit: 255
+    t.text     "description", limit: 65535
+    t.text     "notes",       limit: 65535
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "lorenz_data", force: :cascade do |t|
-    t.decimal  "x_value",          precision: 3, scale: 2
-    t.decimal  "y_value",          precision: 7, scale: 5
-    t.decimal  "st_dev",           precision: 7, scale: 5
-    t.integer  "data_variable_id"
-    t.integer  "group_size"
-    t.integer  "year"
-    t.datetime "created_at",                               null: false
-    t.datetime "updated_at",                               null: false
+    t.decimal  "x_value",                    precision: 3, scale: 2
+    t.decimal  "y_value",                    precision: 7, scale: 5
+    t.decimal  "st_dev",                     precision: 7, scale: 5
+    t.integer  "data_variable_id", limit: 4
+    t.integer  "group_size",       limit: 4
+    t.integer  "year",             limit: 4
+    t.datetime "created_at",                                         null: false
+    t.datetime "updated_at",                                         null: false
   end
 
   create_table "user_data", force: :cascade do |t|
-    t.integer  "data_variable_id"
-    t.integer  "user_id"
-    t.integer  "year"
-    t.decimal  "error_percent"
-    t.decimal  "error"
-    t.string   "value_string"
-    t.decimal  "value_number_low"
-    t.decimal  "value_number_high"
-    t.decimal  "value_number_mid"
-    t.string   "unit"
+    t.integer  "data_variable_id",  limit: 4
+    t.integer  "user_id",           limit: 4
+    t.integer  "year",              limit: 4
+    t.decimal  "error_percent",                 precision: 10
+    t.decimal  "error",                         precision: 10
+    t.string   "value_string",      limit: 255
+    t.decimal  "value_number_low",              precision: 10
+    t.decimal  "value_number_high",             precision: 10
+    t.decimal  "value_number_mid",              precision: 10
+    t.string   "unit",              limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end

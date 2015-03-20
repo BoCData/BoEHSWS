@@ -305,6 +305,7 @@ namespace :import do
         
         #Add all of the values to the data point array
         data_points << {:data_variable => user_datum.data_variable, :x_value => x_value, :y_value => sum, :st_dev => error, :year => user_datum.year, :group_size => group_size}
+        puts data_points
         
         #Reset the count for the records in the group
         count = records_per_group
@@ -360,8 +361,6 @@ namespace :import do
       datum[:y_value] += prev_y_value
       prev_y_value = datum[:y_value]
       
-      # puts datum[:x_value].round(3).to_s << " : " << datum[:y_value].round(3).to_s << " +/-" << datum[:st_dev].round(3).to_s
-      puts datum[:y_value].round(3).to_s
     end  
 
     return data
