@@ -261,10 +261,10 @@ namespace :import do
     data_points = Array.new #store the end values here
     count = records_per_group #num of records per group (there are 20)
     group_size = records_per_group
-    sum = 0 #sum for the current div
-    total_sum = 0 #sum of all of the data points
-    error = 0 #error added for the current div
-    total_sum_error = 0 #error added for all of the records
+    sum = 0.0 #sum for the current div
+    total_sum = 0.0 #sum of all of the data points
+    error = 0.0 #error added for the current div
+    total_sum_error = 0.0 #error added for all of the records
     x_value = x_interval #x value for the current div
     
     #Loop through all of the user data
@@ -305,7 +305,6 @@ namespace :import do
         
         #Add all of the values to the data point array
         data_points << {:data_variable => user_datum.data_variable, :x_value => x_value, :y_value => sum, :st_dev => error, :year => user_datum.year, :group_size => group_size}
-        puts data_points
         
         #Reset the count for the records in the group
         count = records_per_group
@@ -348,8 +347,8 @@ namespace :import do
   
   def calculate_cumulative_group_percent(data)
     #Initialize error and previous y value
-    error = 0
-    prev_y_value = 0
+    error = 0.0
+    prev_y_value = 0.0
     
     #Loop through all data points
     data.each do |datum|
