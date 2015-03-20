@@ -1,11 +1,61 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-# This model initially had no columns defined.  If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+---
+data_variables_001:
+  id: 1
+  name: sex
+  description: Sex
+  notes: Available from 2011 onwards
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variables_002:
+  id: 2
+  name: tenure
+  description: Housing tenure
+  notes: Available from 2011 onwards
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variables_003:
+  id: 3
+  name: soc
+  description: Social grade
+  notes: Available 2012-2013
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variables_004:
+  id: 4
+  name: age_grp
+  description: Age groups
+  notes: ''
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variables_005:
+  id: 5
+  name: region
+  description: Region
+  notes: Available from 2011 onwards
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variables_006:
+  id: 6
+  name: mastat
+  description: Marital status
+  notes: Available from 2012-2013
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variables_007:
+  id: 7
+  name: dfihhyr
+  description: 'How much of your monthly income would you say your household has left
+    after paying tax, national insurance, housing costs (eg. rent, mortgage repayments,
+    council tax), loan repayments (eg. Personal loans, credit cards) and bills (eg.
+    Electricity) '
+  notes: Available from 2011 onwards
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z
+data_variables_008:
+  id: 8
+  name: saveamount
+  description: How much of your household monthly income would you say that you save
+    every month?
+  notes: Available from 2011 onwards
+  created_at: 2015-03-20 16:29:31.000000000 Z
+  updated_at: 2015-03-20 16:29:31.000000000 Z

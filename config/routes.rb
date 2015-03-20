@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  get 'api/lorenz_curve/:variable/:year' => 'api#lorenz_curve'
+  get 'api/lorenz_curve/:variable/:year' => 'api#lorenz_curve', defaults: {format: 'json'}
   
   # root 'welcome#index'
 
