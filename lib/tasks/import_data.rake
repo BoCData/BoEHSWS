@@ -145,9 +145,10 @@ namespace :import do
     
       #Get the csv data from the file and turn the headers into symbols as we go
       csv = CSV.new(body, :headers => true, :header_converters => :symbol, :converters => [:all, :blank_to_nil])
+      dvs = DataVariable.all
       
       #Loop through all of the rows of the CSV
-      csv.each do |row|
+      csv.each_with_index do |row, i|
         #Get the row and save the user id
         user_id = row[:subsid]
         
@@ -155,13 +156,13 @@ namespace :import do
         row.each do |index, value|
           index = index.to_s
           if columns.include? index
+
             #Find the related data variable by the column name
-            dv = DataVariable.find_by(name: index)    
-          
+            dv = dvs.find_by_name(index)
+                      
             #Initialize the default params
             params = {:data_variable => dv, :user_id => user_id, :year => year, :value_string => value}
-            # puts params
-          
+
             #Check if the index is either saveamount of dfihhyr
             if index == "saveamount"
               numbers = saveamount[value] || nil #set it to null by default
@@ -188,7 +189,6 @@ namespace :import do
                 :error_percent => 0, 
                 :unit => '£'
               }
-    
               #Merge them into default params if so
               params.merge!(numbers)
               user_data << params                     
@@ -198,9 +198,14 @@ namespace :import do
             end
           end
         end
-      
+        if i % 500 == 0
+          UserDatum.create!(user_data)
+          
+          #Initialize user data to insert
+          user_data = Array.new
+        end
       end
-      
+
       UserDatum.create!(user_data)
     end
   end
@@ -237,9 +242,8 @@ namespace :import do
     #Calculate the x-axis interval size
     x_interval = range / group_size
     
-    
     #Get the user data ordered lowest to highest for one variable in one year
-    user_data = UserDatum.joins(:data_variable).where("data_variables.name LIKE ?%", variable_name).where(year: year).order(value_number_mid: :asc) 
+    user_data = UserDatum.joins(:data_variable).where("data_variables.name LIKE (?)", "#{variable_name}%").where(year: year).order(value_number_mid: :asc) 
     
     #Calculate the number of total records
     record_count = user_data.count
@@ -251,6 +255,7 @@ namespace :import do
     groups_with_extra_record = (record_count % group_size).floor
     
     data = calculate_lorenz_curve(user_data, records_per_group, x_interval, groups_with_extra_record)
+    puts data
     
     LorenzDatum.create!(data)
 
@@ -328,8 +333,8 @@ namespace :import do
         x_value += x_interval
         
         #Reset the sum, error, and extra record flag
-        sum = 0
-        error = 0
+        sum = 0.0
+        error = 0.0
       end
     end
     
@@ -346,11 +351,16 @@ namespace :import do
   def calculate_group_percent(data, total_sum, total_sum_error)
     #Loop through all data points
     data.each do |datum|
-      #Calculate the new error based on the data being divided by the total sum
-      datum[:st_dev] = Math.sqrt((datum[:st_dev] / datum[:y_value]) * (datum[:st_dev] / datum[:y_value]) + (total_sum_error / total_sum) * (total_sum_error / total_sum))
+      if datum[:y_value] > 0.0
       
-      #Calculate the new y value by dividing value by the total sum
-      datum[:y_value] = datum[:y_value] / total_sum
+        #Calculate the new error based on the data being divided by the total sum
+        datum[:st_dev] = Math.sqrt((datum[:st_dev] / datum[:y_value]) * (datum[:st_dev] / datum[:y_value]) + (total_sum_error / total_sum) * (total_sum_error / total_sum))
+
+        #Calculate the new y value by dividing value by the total sum
+        datum[:y_value] = datum[:y_value] / total_sum
+      else
+        datum[:st_dev] = 0.0
+      end
     end
     
     return data
